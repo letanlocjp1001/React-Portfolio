@@ -1,0 +1,55 @@
+.project {
+  display: flex;
+  justify-content: space-around;
+  padding: 15rem 22rem;
+  flex-wrap: wrap;
+
+  &__card {
+    width: 40rem;
+    margin: 2.5rem 2.5rem;
+    height: 100%;
+  }
+  &__card--view {
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.6);
+    color: #fff;
+    background-color: transparent;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    height: 100%;
+  }
+  &__card--view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.8);
+  }
+}
+.card {
+  &__img {
+  }
+  &__body {
+    text-align: center;
+  }
+  &__title {
+    font-size: 2.25rem;
+    margin: 1rem 0;
+  }
+  &__details {
+    font-size: 1.6rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    border: 3px solid #f200b2;
+    background-color: transparent;
+    padding: 1rem 3rem;
+    box-shadow: inset 0 0 20px 0 #f200b2, 0 0 20px 0 #f200b2;
+    color: #f200b2;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #fff, 0 0 20px #f200b2;
+    cursor: pointer;
+    margin: 3rem 0;
+  }
+}

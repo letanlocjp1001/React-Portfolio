@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import * as FaIcons from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import './Navbar.css'
+import './Navbar.scss'
 import Logo from '../img/logo.png'
 import moment from 'moment'
 
@@ -28,47 +28,54 @@ function Navbar() {
   return (
     <>
       <div className='sidebar'>
-        <Link to='#' />
         <ul className='side-nav'>
           <li className='side-nav__item'>
-            <a href='#home' className='btn side-nav__link'>
-              <FaIcons.FaHome />
-            </a>
+            <Link to='/'>
+              <button className='btn'>
+                <FaIcons.FaHome />
+              </button>
+            </Link>
           </li>
           <li className='side-nav__item'>
-            <a href='#about' className='btn side-nav__link'>
-              <FaIcons.FaRegAddressBook />
-            </a>
+            <Link to='/about'>
+              <button className='btn'>
+                <FaIcons.FaRegAddressBook />
+              </button>
+            </Link>
           </li>
           <li className='side-nav__item'>
-            <a href='#skill' className='btn side-nav__link'>
-              <FaIcons.FaCode />
-            </a>
+            <Link to='/skill'>
+              <button className='btn'>
+                <FaIcons.FaCode />
+              </button>
+            </Link>
           </li>
           <li className='side-nav__item'>
-            <button className='btn side-nav__link'>
-              <FaIcons.FaBusinessTime />
-            </button>
+            <Link to='/project'>
+              <button className='btn'>
+                <FaIcons.FaBusinessTime />
+              </button>
+            </Link>
           </li>
           <li className='side-nav__item'>
-            <button className='btn side-nav__link'>
+            <button className='btn'>
               <FaIcons.FaPhoneSquare />
             </button>
           </li>
         </ul>
         <ul className='side-nav'>
           <li className='side-nav__item'>
-            <button className='btn side-nav__link'>
+            <button className='btn'>
               <FaIcons.FaFacebook />
             </button>
           </li>
           <li className='side-nav__item'>
-            <button className='btn side-nav__link'>
+            <button className='btn'>
               <FaIcons.FaInstagram />
             </button>
           </li>
           <li className='side-nav__item'>
-            <button className='btn side-nav__link'>
+            <button className='btn'>
               <FaIcons.FaGithub />
             </button>
           </li>
@@ -84,7 +91,7 @@ function Navbar() {
           <button className='btn darkmore__btn' onClick={toggleTheme}>
             <FaIcons.FaSun />
           </button>
-          <button className='btn global__btn'>
+          <button className='btn'>
             <FaIcons.FaGlobe />
           </button>
         </div>

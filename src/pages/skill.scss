@@ -1,42 +1,42 @@
-.skills {
+.skill {
   display: flex;
   font-size: 2rem;
   justify-content: space-around;
   align-items: center;
   padding: 0 10rem;
+  &__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  &__bar {
+    background: transparent;
+    border-radius: 2rem;
+    margin: 1.5rem 0;
+    height: 3rem;
+    width: 50rem;
+    box-shadow: inset 4px 4px 6px -1px rgba(210, 54, 105, 0.5),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.4),
+      0.5px 0.5px 0 rgba(210, 54, 105, 0.5),
+      0px 12px 10px -10px rgba(210, 54, 105, 0.3);
+  }
+  &__bar--num {
+    background: linear-gradient(to left, #e91e63, #673ab7);
+    border-radius: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: 1s ease 0.3s;
+    animation: skill-anima 2s forwards linear;
+  }
+  &__name {
+    color: white;
+  }
 }
 
-.skill__group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-.skill__bar {
-  background: transparent;
-  border-radius: 2rem;
-  margin: 1.5rem 0;
-  height: 3rem;
-  width: 50rem;
-  box-shadow: inset 4px 4px 6px -1px rgba(210, 54, 105, 0.5),
-    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.4),
-    0.5px 0.5px 0 rgba(210, 54, 105, 0.5),
-    0px 12px 10px -10px rgba(210, 54, 105, 0.3);
-}
-.skill__bar--num {
-  background: linear-gradient(to left, #e91e63, #673ab7);
-  border-radius: 2rem;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  transition: 1s ease 0.3s;
-  animation: skill-anima 2s forwards linear;
-}
-.skill__name {
-  color: white;
-}
 @keyframes skill-anima {
   from {
     width: 0;
@@ -76,6 +76,8 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+// ===CIRCLE===
 .chart {
   display: flex;
   justify-content: space-around;
@@ -84,17 +86,34 @@
   padding: 6rem;
   margin: 3rem;
   position: relative;
-}
-.chart__name {
-  margin-bottom: 2rem;
-  color: #fff;
-}
-.chart__circle {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  &__name {
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  &__circle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__circle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__circle--num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+  }
+  &__circle--num span {
+    font-size: 2rem;
+  }
 }
 
 .outer {
@@ -166,21 +185,4 @@
   100% {
     stroke-dashoffset: 160;
   }
-}
-.chart__circle svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.chart__circle--num {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
-  color: white;
-}
-.chart__circle--num span {
-  font-size: 2rem;
 }

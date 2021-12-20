@@ -1,13 +1,13 @@
 import React from 'react'
-import './skill.css'
+import './skill.scss'
 import data from '../data/dataskill.js'
 import circles from '../data/datacircle'
 
 const Skill = () => {
   return (
-    <section id='skill'>
+    <section>
       <div className='heading-1'>Skills</div>
-      <div className='skills'>
+      <div className='skill'>
         <div className='skill-left'>
           {data.map((skill) => {
             const { id, name, precents } = skill

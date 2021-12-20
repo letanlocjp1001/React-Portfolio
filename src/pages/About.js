@@ -1,5 +1,5 @@
 import React from 'react'
-import './About.css'
+import './About.scss'
 import AboutImg from '../img/about.jpg'
 
 function About() {

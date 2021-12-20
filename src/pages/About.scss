@@ -1,0 +1,61 @@
+.about {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  grid-row: 3/4;
+  grid-column: 2/-1;
+  color: #fff;
+  &__position {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__photo {
+    transition: all 0.5s linear;
+  }
+  &__shape {
+    position: relative;
+  }
+
+  &__name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+  &__shape:hover &__name {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  &__shape:hover &__photo {
+    filter: blur(3px) brightness(80%);
+  }
+  &__right {
+    font-size: 1.6rem;
+  }
+  &__parent,
+  &__children,
+  &__parent--children {
+    font-family: 'Source Code Pro', sans-serif;
+    padding-left: 2rem;
+  }
+  &__parent,
+  &__parent--children {
+    color: #e032d8;
+  }
+  &__children {
+    color: #08fdd8;
+    padding-left: 2rem;
+  }
+  &__parent--children,
+  &__children--chil {
+    padding-left: 4rem !important;
+  }
+  &__icon {
+    color: yellow;
+  }
+}
