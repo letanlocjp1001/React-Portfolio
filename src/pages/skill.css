@@ -1,0 +1,186 @@
+.skills {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.skill__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.skill__bar {
+  background: transparent;
+  border-radius: 2rem;
+  margin: 1.5rem 0;
+  height: 3rem;
+  width: 50rem;
+  box-shadow: inset 4px 4px 6px -1px rgba(210, 54, 105, 0.5),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.4),
+    0.5px 0.5px 0 rgba(210, 54, 105, 0.5),
+    0px 12px 10px -10px rgba(210, 54, 105, 0.3);
+}
+.skill__bar--num {
+  background: linear-gradient(to left, #e91e63, #673ab7);
+  border-radius: 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: 1s ease 0.3s;
+  animation: skill-anima 2s forwards linear;
+}
+.skill__name {
+  color: white;
+}
+@keyframes skill-anima {
+  from {
+    width: 0;
+  }
+}
+.skill__group:nth-child(1) .skill__bar--num {
+  width: 80%;
+}
+.skill__group:nth-child(2) .skill__bar--num {
+  width: 90%;
+}
+.skill__group:nth-child(3) .skill__bar--num {
+  width: 70%;
+}
+.skill__group:nth-child(4) .skill__bar--num {
+  width: 88%;
+}
+.skill__group:nth-child(5) .skill__bar--num {
+  width: 60%;
+}
+.skill__group:nth-child(6) .skill__bar--num {
+  width: 50%;
+}
+.skill__group:nth-child(7) .skill__bar--num {
+  width: 77%;
+}
+.skill__group:nth-child(8) .skill__bar--num {
+  width: 70%;
+}
+.skill-left {
+  flex: 1;
+}
+.skill-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem;
+  margin: 3rem;
+  position: relative;
+}
+.chart__name {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.chart__circle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer {
+  height: 16rem;
+  width: 16rem;
+  border-radius: 50%;
+  padding: 2rem;
+
+  box-shadow: 6px 6px 10px -1px rgba(210, 54, 105, 0.5),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.4);
+}
+.inner {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(210, 54, 105, 0.5),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.4),
+    0.5px 0.5px 0 rgba(210, 54, 105, 0.5),
+    0px 12px 10px -10px rgba(210, 54, 105, 0.3);
+}
+#circle1 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anime1 2s linear forwards;
+}
+#circle2 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anime2 2s linear forwards;
+}
+#circle3 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anime3 2s linear forwards;
+}
+#circle4 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anime4 2s linear forwards;
+}
+@keyframes anime1 {
+  100% {
+    stroke-dashoffset: 90;
+  }
+}
+@keyframes anime2 {
+  100% {
+    stroke-dashoffset: 125;
+  }
+}
+@keyframes anime3 {
+  100% {
+    stroke-dashoffset: 210;
+  }
+}
+@keyframes anime4 {
+  100% {
+    stroke-dashoffset: 160;
+  }
+}
+.chart__circle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chart__circle--num {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white;
+}
+.chart__circle--num span {
+  font-size: 2rem;
+}
