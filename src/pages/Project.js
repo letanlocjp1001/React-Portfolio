@@ -28,6 +28,7 @@ const Project = () => {
           )
         })}
       </div>
+      <span className='heading'>project</span>
     </section>
   )
 }

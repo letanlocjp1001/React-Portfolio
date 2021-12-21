@@ -4,6 +4,8 @@
   justify-content: space-around;
   align-items: center;
   padding: 0 10rem;
+  height: 100%;
+  position: relative;
   &__group {
     display: flex;
     justify-content: center;
@@ -58,13 +60,13 @@
   width: 60%;
 }
 .skill__group:nth-child(6) .skill__bar--num {
-  width: 50%;
-}
-.skill__group:nth-child(7) .skill__bar--num {
   width: 77%;
 }
+.skill__group:nth-child(7) .skill__bar--num {
+  width: 79%;
+}
 .skill__group:nth-child(8) .skill__bar--num {
-  width: 70%;
+  width: 66%;
 }
 .skill-left {
   flex: 1;
@@ -185,4 +187,41 @@
   100% {
     stroke-dashoffset: 160;
   }
+}
+.skill__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill__icon {
+  font-size: 3rem;
+  margin-left: 5px;
+}
+.skill__group:nth-child(1) span {
+  color: #e34c26;
+}
+.skill__group:nth-child(2) span {
+  color: #2b55ff;
+}
+.skill__group:nth-child(3) span {
+  color: #e7cb13;
+}
+.skill__group:nth-child(4) span {
+  color: #61dbfb;
+}
+.skill__group:nth-child(5) span {
+  color: #41ac3e;
+}
+.skill__group:nth-child(6) span {
+  color: #06a1e9;
+}
+.skill__group:nth-child(7) span {
+  color: #fc630a;
+}
+.skill__group:nth-child(8) span {
+  color: #eb21e1;
+}
+
+.heading__space {
+  letter-spacing: 5rem;
 }

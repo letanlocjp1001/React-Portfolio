@@ -6,14 +6,16 @@ import circles from '../data/datacircle'
 const Skill = () => {
   return (
     <section>
-      <div className='heading-1'>Skills</div>
       <div className='skill'>
         <div className='skill-left'>
           {data.map((skill) => {
-            const { id, name, precents } = skill
+            const { id, name, precents, icon } = skill
             return (
               <div className='skill__group' key={id}>
-                <div className='skill__name'>{name}</div>
+                <div className='skill__name'>
+                  {name}
+                  <span className='skill__icon'>{icon}</span>
+                </div>
                 <div className='skill__bar'>
                   <div className='skill__bar--num'>{precents}%</div>
                 </div>
@@ -28,7 +30,7 @@ const Skill = () => {
               <div className='chart' key={id}>
                 <h2 className='chart__name'>{name}</h2>
                 <div className='chart__circle'>
-                  <div class='outer'>
+                  <div className='outer'>
                     <div className='inner'></div>
                   </div>
                   <svg
@@ -39,8 +41,8 @@ const Skill = () => {
                   >
                     <defs>
                       <linearGradient id='GradientColor'>
-                        <stop offset='0%' stop-color='#e91e63' />
-                        <stop offset='100%' stop-color='#673ab7' />
+                        <stop offset='0%' stopColor='#e91e63' />
+                        <stop offset='100%' stopColor='#673ab7' />
                       </linearGradient>
                     </defs>
                     <circle
@@ -48,7 +50,7 @@ const Skill = () => {
                       cx='80'
                       cy='80'
                       r='70'
-                      stroke-linecap='round'
+                      strokeLinecap='round'
                     />
                   </svg>
                   <h3 className='chart__circle--num'>
@@ -61,6 +63,7 @@ const Skill = () => {
           })}
         </div>
       </div>
+      <span className='heading heading__space'>Skill</span>
     </section>
   )
 }

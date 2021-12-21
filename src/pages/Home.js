@@ -71,7 +71,7 @@ function Home() {
                 enable: true,
                 value_area: 1000,
               },
-              value: 30,
+              value: 20,
             },
             opacity: {
               value: 0.4,
@@ -168,22 +168,24 @@ function Home() {
               ></path>
             </g>
           </svg>
-          <p class='home__heading-3'>
-            <Typedwriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString("I'm a UX/UI Designer.")
-                  .pauseFor(2000)
-                  .deleteChars(15)
-                  .typeString('Front-End Web Developer.')
-                  .pauseFor(2000)
-                  .deleteChars(24)
-                  .start()
-              }}
-              options={{ loop: true, PauseFor: 1500 }}
-            />
-          </p>
-          <button class='home__btn'>Contact</button>
+          <div>
+            <span className='home__heading-3'>
+              <Typedwriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("I'm a UX/UI Designer.")
+                    .pauseFor(2000)
+                    .deleteChars(15)
+                    .typeString('Front-End Web Developer.')
+                    .pauseFor(2000)
+                    .deleteChars(24)
+                    .start()
+                }}
+                options={{ loop: true, PauseFor: 1500 }}
+              />
+            </span>
+          </div>
+          <button className='home__btn'>Contact</button>
         </div>
         <div className='home__right'>
           <ul className='home__icon'>
@@ -252,6 +254,7 @@ function Home() {
             </li>
           </ul>
         </div>
+        <span className='heading'>Welcome</span>
       </section>
     </>
   )

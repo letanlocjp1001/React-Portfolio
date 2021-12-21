@@ -57,9 +57,11 @@ function Navbar() {
             </Link>
           </li>
           <li className='side-nav__item'>
-            <button className='btn'>
-              <FaIcons.FaPhoneSquare />
-            </button>
+            <Link to='/contact'>
+              <button className='btn'>
+                <FaIcons.FaPhoneSquare />
+              </button>
+            </Link>
           </li>
         </ul>
         <ul className='side-nav'>
