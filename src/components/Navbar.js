@@ -3,7 +3,6 @@ import * as FaIcons from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './Navbar.scss'
 import Logo from '../img/logo.png'
-import moment from 'moment'
 
 const getStorageTheme = () => {
   let theme = 'dark__theme'
@@ -87,7 +86,6 @@ function Navbar() {
         </div>
 
         <div className='darkmore'>
-          <span>{moment().format('MMM ddd Do YYYY')}</span>
           <button className='btn darkmore__btn' onClick={toggleTheme}>
             <FaIcons.FaSun />
           </button>

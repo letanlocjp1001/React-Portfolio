@@ -227,7 +227,7 @@
       position: relative;
       width: 10rem;
       height: 10rem;
-      margin: 0 1.5rem;
+      margin: 0 3rem;
 
       &::before {
         content: '';
@@ -316,5 +316,71 @@
     li:nth-child(7):hover span {
       background: #3c873a;
     }
+  }
+  li:nth-child(1) {
+    animation: toright 2.5s linear forwards;
+  }
+  li:nth-child(2) {
+    animation: fly 3s ease-in-out forwards;
+  }
+  li:nth-child(3) {
+    animation: drop 2s linear forwards;
+  }
+  li:nth-child(4) {
+    animation: fly 3.6s linear forwards;
+  }
+  li:nth-child(5) {
+    animation: drop 4s ease-in forwards;
+  }
+  li:nth-child(6) {
+    animation: fly 3.2s linear forwards;
+  }
+  li:nth-child(7) {
+    animation: toleft 3s linear forwards;
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fly {
+  0% {
+    opacity: 0;
+    transform: translateY(30rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes toright {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes toleft {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
