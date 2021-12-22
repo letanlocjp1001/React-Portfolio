@@ -26,20 +26,21 @@
   }
 
   &__right {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   &__parent,
   &__children,
   &__parent--children {
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: azo-sans-web, sans-serif;
     padding-left: 2rem;
   }
   &__parent,
   &__parent--children {
-    color: #e032d8;
+    color: var(--clr-primary);
+    font-weight: bold;
   }
   &__children {
-    color: #08fdd8;
+    color: var(--clr-primary2);
     padding-left: 2rem;
   }
   &__parent--children,
@@ -47,6 +48,6 @@
     padding-left: 4rem !important;
   }
   &__icon {
-    color: yellow;
+    color: var(--clr-key);
   }
 }

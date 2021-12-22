@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import * as FaIcons from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './Navbar.scss'
-import Logo from '../img/logo.png'
+// import Logo from '../img/logo.png'
+import Logo1 from '../img/icon.svg'
 
 const getStorageTheme = () => {
   let theme = 'dark__theme'
@@ -83,9 +84,12 @@ function Navbar() {
         </ul>
       </div>
       <div className='siderow'>
-        <div className='siderow__logo'>
-          <img src={Logo} alt='Logo' />
-        </div>
+        <Link to='/'>
+          <div className='siderow__logo'>
+            <img src={Logo1} alt='Logo' />
+            <span className='text-logo'>LETANLOC</span>
+          </div>
+        </Link>
 
         <div className='darkmore'>
           <button className='btn darkmore__btn' onClick={toggleTheme}>

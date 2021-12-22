@@ -168,22 +168,20 @@ function Home() {
               ></path>
             </g>
           </svg>
-          <div>
-            <span className='home__heading-3'>
-              <Typedwriter
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString("I'm a UX/UI Designer.")
-                    .pauseFor(2000)
-                    .deleteChars(15)
-                    .typeString('Front-End Web Developer.')
-                    .pauseFor(2000)
-                    .deleteChars(24)
-                    .start()
-                }}
-                options={{ loop: true, PauseFor: 1500 }}
-              />
-            </span>
+          <div className='home__heading-3'>
+            <Typedwriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("I'm a UX/UI Designer.")
+                  .pauseFor(2000)
+                  .deleteChars(15)
+                  .typeString('Front-End Web Developer.')
+                  .pauseFor(2000)
+                  .deleteChars(24)
+                  .start()
+              }}
+              options={{ loop: true, PauseFor: 1500 }}
+            />
           </div>
           <button className='home__btn'>Contact</button>
         </div>

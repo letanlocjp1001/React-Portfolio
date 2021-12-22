@@ -16,7 +16,7 @@
   &__bar {
     background: transparent;
     border-radius: 2rem;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     height: 3rem;
     width: 50rem;
     box-shadow: inset 4px 4px 6px -1px rgba(210, 54, 105, 0.5),
@@ -27,7 +27,7 @@
   &__bar--num {
     background: linear-gradient(to left, #e91e63, #673ab7);
     border-radius: 2rem;
-    color: #fff;
+    color: var(--clr-white);
     display: flex;
     justify-content: center;
     height: 100%;
@@ -35,7 +35,8 @@
     animation: skill-anima 2s forwards linear;
   }
   &__name {
-    color: white;
+    color: var(--clr-font);
+    font-size: 2.4rem;
   }
 }
 
@@ -90,7 +91,7 @@
   position: relative;
   &__name {
     margin-bottom: 2rem;
-    color: #fff;
+    color: var(--clr-font);
   }
   &__circle {
     position: relative;
@@ -111,7 +112,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
-    color: white;
+    color: var(--clr-font);
   }
   &__circle--num span {
     font-size: 2rem;

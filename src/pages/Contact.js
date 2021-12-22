@@ -4,7 +4,13 @@ import './contact.scss'
 const Contact = () => {
   return (
     <>
-      <span className='heading'>contact</span>
+      <section>
+        <div className='contact'>
+          <input placeholder='Name' />
+          <input placeholder='Email' />
+        </div>
+        <span className='heading'>contact</span>
+      </section>
     </>
   )
 }
