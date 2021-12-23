@@ -8,6 +8,9 @@
   --clr-fill: #fff;
   --clr-bar: #111;
   --clr-key: yellow;
+  --clr-bg-shadow: rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  --clr-border: 3px solid #f200b2;
 
   --clr-white: #fff;
   --clr-black: black;
@@ -15,19 +18,21 @@
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
 }
 .light__theme {
   --clr-primary: #019c28;
-  --clr-primary2: #83018f;
+  --clr-primary2: #bd02ce;
   --clr-bg: rgb(253, 247, 253);
   --clr-font: #0c0d1d;
   --clr-icon: rgba(1, 30, 43, 0.5);
   --clr-fill: #011e2b;
   --clr-bar: rgb(231, 228, 231);
   --clr-key: rgb(163, 3, 3);
+  --clr-bg-shadow: rgba(255, 255, 255, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --clr-border: 3px solid #019c28;
 
   --clr-white: #fff;
   --clr-black: black;
@@ -35,7 +40,6 @@
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
 }
@@ -141,7 +145,7 @@ section {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-30deg);
-  font-size: 48rem;
+  font-size: 38rem;
   -webkit-text-stroke: 8px var(--clr-primary);
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;

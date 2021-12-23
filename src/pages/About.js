@@ -1,4 +1,5 @@
 import React from 'react'
+import Tilt from 'react-parallax-tilt'
 import './About.scss'
 import AboutImg from '../img/about.jpg'
 
@@ -10,7 +11,9 @@ function About() {
           <div className='about__left'>
             <div className='about__img'>
               <figure className='about__shape'>
-                <img src={AboutImg} alt='about' className='about__photo' />
+                <Tilt>
+                  <img src={AboutImg} alt='about' className='about__photo' />
+                </Tilt>
               </figure>
             </div>
           </div>

@@ -1,3 +1,90 @@
 .contact {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem 0;
+  height: 100%;
+  &__box {
+    height: 80rem;
+    width: 1600px;
+    background-image: linear-gradient(
+        105deg,
+        rgba(8, 8, 8, 0.5) 0px,
+        rgba(24, 20, 20, 0.5) 50%,
+        rgba(231, 248, 226, 0.1) 50%
+      ),
+      url(../img/nat-10.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1.5rem 4rem;
+    border-radius: 3px;
+  }
+  &__left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    padding: 3rem;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+  }
+}
+.form {
+  &__input {
+    font-size: 2rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: var(--clr-bg-shadow);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 70rem;
+    display: block;
+    transition: all 0.3s;
+    margin-left: 3rem;
+    color: var(--clr-primary2);
+
+    &:focus {
+      outline: none;
+      box-shadow: var(--clr-bg-shadow);
+      border-bottom: var(--clr-border);
+    }
+
+    &:focus:invalid {
+      border-bottom: var(--clr-border);
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--clr-primary);
+    }
+  }
+  &__smg {
+    height: 100px;
+  }
+  &__btn {
+    margin-left: 5rem;
+    font-size: 3rem;
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 5rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    color: var(--clr-primary2);
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
 }

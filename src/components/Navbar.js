@@ -12,8 +12,10 @@ const getStorageTheme = () => {
   }
   return theme
 }
+
 function Navbar() {
   const [theme, setTheme] = useState(getStorageTheme())
+
   const toggleTheme = () => {
     if (theme === 'dark__theme') {
       setTheme('light__theme')
@@ -25,6 +27,7 @@ function Navbar() {
     document.documentElement.className = theme
     localStorage.setItem('theme', theme)
   }, [theme])
+
   return (
     <>
       <div className='sidebar'>

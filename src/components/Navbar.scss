@@ -7,7 +7,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--clr-bar);
+  // background-color: var(--clr-bar);
+  background: var(--clr-bg-shadow);
+  backdrop-filter: blur(5px);
+
   z-index: 1;
   transition: all 0.5s ease;
 }
@@ -28,7 +31,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 6rem;
-  /* background: #111; */
+  background: var(--clr-bg-shadow);
+  backdrop-filter: blur(5px);
+  box-shadow: var(--dark-shadow);
   z-index: 1000;
 }
 .siderow__logo {
