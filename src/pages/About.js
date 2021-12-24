@@ -9,13 +9,19 @@ function About() {
       <section className='about'>
         <div className='about__position'>
           <div className='about__left'>
-            <div className='about__img'>
-              <figure className='about__shape'>
-                <Tilt>
-                  <img src={AboutImg} alt='about' className='about__photo' />
-                </Tilt>
-              </figure>
-            </div>
+            <Tilt>
+              <div className='about__boxs'>
+                <div className='about__box'>
+                  <img src={AboutImg} alt='' />
+                </div>
+                <div className='about__details'>
+                  <h2>About me</h2>
+                  <p>
+                    私はチームワークを大切にすることです。大学時代に様々な活動に参加しました。その活動の中で、問題に直面した時、自分一人で解決しようとするのではなく、必ず仲間と相談し、一緒に解決してきました。そうする事で、より良い判断が出来ましたし、仲間との絆も深めること出来ました。
+                  </p>
+                </div>
+              </div>
+            </Tilt>
           </div>
           <div className='about__right'>
             <pre>
@@ -43,10 +49,8 @@ function About() {
               </span>
               &#44;
               <br />
-              <span className='about__parent'>"type" </span>&#58;
-              <span className='about__children'>
-                "github.com/letanlocjp1001"
-              </span>
+              <span className='about__parent'>"資格" </span>&#58;
+              <span className='about__children'>"日本語能力試験 N2 合格"</span>
               &#44;
               <br />
               <span className='about__parent'>"engines" </span>&#58; &#91;{' '}
