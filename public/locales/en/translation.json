@@ -23,5 +23,11 @@
     "schoolname": "ECC Computer College",
     "qualify": "Qualifications",
     "language": "Japanese Language Proficiency Test"
+  },
+  "contact": {
+    "name": "Full Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
   }
 }

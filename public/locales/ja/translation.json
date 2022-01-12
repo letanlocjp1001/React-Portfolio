@@ -23,5 +23,11 @@
     "schoolname": "ECC Computer 専門学校",
     "qualify": "資格",
     "language": "日本語能力試験 N2 合格"
+  },
+  "contact": {
+    "name": "お名前",
+    "email": "アドレス",
+    "message": "メッセージ",
+    "send": "送信"
   }
 }

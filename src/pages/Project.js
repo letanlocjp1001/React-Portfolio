@@ -1,10 +1,13 @@
 import React from 'react'
 import Tilt from 'react-parallax-tilt'
 import './project.scss'
+import { useTranslation } from 'react-i18next'
 import data from '../data/dataproject'
 import Img from '../img/img1.jpg'
+import '../i18n'
 
 const Project = () => {
+  const { t } = useTranslation()
   return (
     <section>
       <div className='project'>
@@ -22,7 +25,7 @@ const Project = () => {
                     <div className='card__title'>{title}</div>
                     <div className='card__details'>{detail}</div>
                     <a href={url} className='card__btn'>
-                      Project
+                      {t('page.project')}
                     </a>
                   </div>
                 </div>
@@ -31,7 +34,7 @@ const Project = () => {
           )
         })}
       </div>
-      <span className='heading'>project</span>
+      <span className='heading'>{t('page.project')}</span>
     </section>
   )
 }

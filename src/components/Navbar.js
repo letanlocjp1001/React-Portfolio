@@ -98,7 +98,7 @@ function Navbar() {
         <Link to='/'>
           <div className='siderow__logo'>
             <img src={Logo1} alt='Logo' />
-            <span className='text-logo'>LETANLOC</span>
+            <span className='text-logo'>{t('about.name')}</span>
           </div>
         </Link>
 

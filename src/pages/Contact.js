@@ -1,25 +1,28 @@
 import React from 'react'
 import './contact.scss'
+import '../i18n'
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
+  const { t } = useTranslation()
   return (
     <>
-      <span className='heading'>Contact</span>
+      <span className='heading'>{t('page.contact')}</span>
       <section>
         <div className='contact'>
           <div className='contact__box'>
             <div className='contact__left'>
-              <h2 className='contact__heading'>Contact Us</h2>
+              <h2 className='contact__heading'>{t('page.contact')}</h2>
               <form className='form'>
                 <div className='form__group'>
                   <input
                     type='text'
                     className='form__input'
-                    placeholder='Full name'
+                    placeholder={t('contact.name')}
                     required
                   />
                   <label for='name' className='form__label'>
-                    Full name
+                    {t('contact.name')}
                   </label>
                 </div>
 
@@ -27,26 +30,28 @@ const Contact = () => {
                   <input
                     type='email'
                     className='form__input'
-                    placeholder='Email address'
+                    placeholder={t('contact.email')}
                     required
                   />
                   <label for='email' className='form__label'>
-                    Email address
+                    {t('contact.email')}
                   </label>
                 </div>
                 <div className='form__group'>
                   <textarea
                     className='form__input form__smg'
-                    placeholder='Message'
+                    placeholder={t('contact.message')}
                     required
                   />
                   <label for='email' className='form__label'>
-                    Message
+                    {t('contact.message')}
                   </label>
                 </div>
 
                 <div className='form__group'>
-                  <button className='card__btn form__btn'>Send &rarr;</button>
+                  <button className='card__btn form__btn'>
+                    {t('contact.send')} &rarr;
+                  </button>
                 </div>
               </form>
             </div>

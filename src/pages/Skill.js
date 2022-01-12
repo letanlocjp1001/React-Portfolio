@@ -1,9 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import './skill.scss'
 import data from '../data/dataskill.js'
 import circles from '../data/datacircle'
+import '../i18n'
 
 const Skill = () => {
+  const { t } = useTranslation()
   return (
     <section>
       <div className='skill'>
@@ -63,7 +66,7 @@ const Skill = () => {
           })}
         </div>
       </div>
-      <span className='heading heading__space'>Skill</span>
+      <span className='heading heading__space'>{t('page.skill')}</span>
     </section>
   )
 }
