@@ -1,10 +1,14 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Particles from 'react-tsparticles'
 import Typedwriter from 'typewriter-effect'
 import * as FaIcons from 'react-icons/fa'
 import './Home.scss'
+import '../i18n'
 
 function Home() {
+  const { t } = useTranslation()
+
   const particlesInit = (main) => {}
 
   const particlesLoaded = (container) => {}
@@ -172,10 +176,10 @@ function Home() {
             <Typedwriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("I'm a UX/UI Designer.")
+                  .typeString(`${t('typewrite.word1')}`)
                   .pauseFor(2000)
                   .deleteChars(15)
-                  .typeString('Front-End Web Developer.')
+                  .typeString(`${t('typewrite.word2')}`)
                   .pauseFor(2000)
                   .deleteChars(24)
                   .start()
@@ -183,7 +187,7 @@ function Home() {
               options={{ loop: true, PauseFor: 1500 }}
             />
           </div>
-          <button className='home__btn'>Contact</button>
+          <button className='home__btn'>{t('page.contact')}</button>
         </div>
         <div className='home__right'>
           <ul className='home__icon'>
@@ -252,7 +256,7 @@ function Home() {
             </li>
           </ul>
         </div>
-        <span className='heading'>Welcome</span>
+        <span className='heading'>{t('page.home')}</span>
       </section>
     </>
   )

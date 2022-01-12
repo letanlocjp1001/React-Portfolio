@@ -1,9 +1,12 @@
 import React from 'react'
 import Tilt from 'react-parallax-tilt'
+import { useTranslation } from 'react-i18next'
 import './About.scss'
 import AboutImg from '../img/about.jpg'
+import '../i18n'
 
 function About() {
+  const { t } = useTranslation()
   return (
     <>
       <section className='about'>
@@ -15,10 +18,8 @@ function About() {
                   <img src={AboutImg} alt='' />
                 </div>
                 <div className='about__details'>
-                  <h2>About me</h2>
-                  <p>
-                    私はチームワークを大切にすることです。大学時代に様々な活動に参加しました。その活動の中で、問題に直面した時、自分一人で解決しようとするのではなく、必ず仲間と相談し、一緒に解決してきました。そうする事で、より良い判断が出来ましたし、仲間との絆も深めること出来ました。
-                  </p>
+                  <h2>{t('about.title')}</h2>
+                  <p>{t('about.text')}</p>
                 </div>
               </div>
             </Tilt>
@@ -28,17 +29,18 @@ function About() {
               <span className='about__icon'>
                 &#123; <br />
               </span>
-              <span className='about__parent'>"author"</span>&#58;
-              <span className='about__children'>"Le Tan Loc"</span>&#44;
+              <span className='about__parent'>{t('about.author')} </span>&#58;
+              <span className='about__children'>{t('about.name')}</span>&#44;
               <br />
-              <span className='about__parent'>"birthday" </span>&#58;
-              <span className='about__children'>"1994/01/10"</span>&#44;
+              <span className='about__parent'>{t('about.birthday')} </span>&#58;
+              <span className='about__children'>{t('about.year')}</span>&#44;
               <br />
-              <span className='about__parent'>"country" </span>&#58;
-              <span className='about__children'>"VietNam"</span>&#44;
+              <span className='about__parent'>{t('about.country')} </span>&#58;
+              <span className='about__children'>{t('about.countryname')}</span>
+              &#44;
               <br />
-              <span className='about__parent'>"description"</span>&#58;
-              <span className='about__children'>"ECC Computer 専門学校"</span>
+              <span className='about__parent'>{t('about.school')} </span>&#58;
+              <span className='about__children'>{t('about.schoolname')}</span>
               &#44;
               <br />
               <span className='about__parent'>"repository" </span>&#58; &#123;{' '}
@@ -49,8 +51,9 @@ function About() {
               </span>
               &#44;
               <br />
-              <span className='about__parent'>"資格" </span>&#58;
-              <span className='about__children'>"日本語能力試験 N2 合格"</span>
+              <span className='about__parent'>{t('about.qualify')} </span>
+              &#58;
+              <span className='about__children'>{t('about.language')}</span>
               &#44;
               <br />
               <span className='about__parent'>"engines" </span>&#58; &#91;{' '}
@@ -129,7 +132,7 @@ function About() {
             </pre>
           </div>
         </div>
-        <span className='heading'>about</span>
+        <span className='heading'>{t('page.about')}</span>
       </section>
     </>
   )

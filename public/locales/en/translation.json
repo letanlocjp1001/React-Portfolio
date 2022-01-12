@@ -1,0 +1,27 @@
+{
+  "page": {
+    "home": "home",
+    "about": "about",
+    "skill": "skill",
+    "project": "project",
+    "contact": "contact"
+  },
+  "typewrite": {
+    "word1": "I'm a UX/UI Designer.",
+    "word2": "Front-End Web Developer."
+  },
+  "about": {
+    "title": "About Me",
+    "text": "I value teamwork. During my college years, I participated in various activities. In those activities, when I faced a problem, I did not try to solve it by myself, but always consulted with my colleagues and solved it together. By doing so, I was able to make better decisions and deepen my bonds with my colleagues.",
+    "author": "author",
+    "name": "Le Tan Loc",
+    "birthday": "birthday",
+    "year": "01/10",
+    "country": "country",
+    "countryname": "VIET NAM",
+    "school": "school",
+    "schoolname": "ECC Computer College",
+    "qualify": "Qualifications",
+    "language": "Japanese Language Proficiency Test"
+  }
+}

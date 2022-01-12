@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import * as FaIcons from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './Navbar.scss'
+import '../i18n'
+import { useTranslation } from 'react-i18next'
+
 // import Logo from '../img/logo.png'
 import Logo1 from '../img/icon.svg'
 
@@ -14,6 +17,11 @@ const getStorageTheme = () => {
 }
 
 function Navbar() {
+  const { t, i18n } = useTranslation()
+  const changleLanguage = (lang) => {
+    i18n.changeLanguage(lang)
+  }
+
   const [theme, setTheme] = useState(getStorageTheme())
 
   const toggleTheme = () => {
@@ -98,8 +106,11 @@ function Navbar() {
           <button className='btn darkmore__btn' onClick={toggleTheme}>
             <FaIcons.FaSun />
           </button>
-          <button className='btn'>
-            <FaIcons.FaGlobe />
+          <button className='btn' onClick={() => changleLanguage('en')}>
+            EN
+          </button>
+          <button className='btn' onClick={() => changleLanguage('ja')}>
+            JA
           </button>
         </div>
       </div>
