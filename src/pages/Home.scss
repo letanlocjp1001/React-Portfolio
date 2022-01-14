@@ -1,10 +1,10 @@
 #svg__name {
-  margin-left: 5rem;
+  // margin-left: 15rem;
 }
 
 #name {
   stroke: var(--clr-primary);
-  margin-left: 5rem;
+  margin-left: 3rem;
   stroke-width: 3px;
   -webkit-animation: fill 3s alternate 3.4s infinite;
   animation: fill 3s alternate 3.4s infinite;
@@ -138,14 +138,12 @@
   align-items: center;
 
   &__left {
-    width: 50%;
-    margin-left: 10rem;
+    padding-left: 20rem;
   }
   &__heading-3 {
     font-family: 'Source Code Pro', sans-serif;
     font-weight: 400;
-    margin-left: 5rem;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--clr-font);
   }
 
@@ -153,16 +151,15 @@
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    margin-left: 5rem;
     margin-top: 2rem;
     border: 3px solid var(--clr-primary);
     background-color: transparent;
-    padding: 2rem 4rem;
+    padding: 1.5rem 3rem;
     box-shadow: inset 0 0 20px 0 var(--clr-primary),
       0 0 20px 0 var(--clr-primary);
     position: relative;
     color: var(--clr-primary);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
@@ -208,9 +205,6 @@
   }
   // ===HOME--ICON===//
 
-  &__right {
-    margin-right: 10rem;
-  }
   &__icon {
     display: flex;
     transform-style: preserve-3d;
@@ -219,8 +213,8 @@
     // margin-right: 16rem;
     li {
       position: relative;
-      width: 10rem;
-      height: 10rem;
+      width: 8rem;
+      height: 8rem;
       margin: 0 3rem;
 
       &::before {
@@ -246,7 +240,7 @@
         transform: skewY(-41deg);
       }
       span {
-        font-size: 6rem;
+        font-size: 4.5rem;
         position: absolute;
         top: 0;
         left: 0;

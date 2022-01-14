@@ -2,7 +2,7 @@
 .sidebar {
   position: fixed;
   height: 100vh;
-  width: 8rem;
+  width: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -30,14 +30,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6rem;
+  padding: 0 4rem;
   background: var(--clr-bg-shadow);
   backdrop-filter: blur(5px);
   box-shadow: var(--dark-shadow);
   z-index: 1000;
 }
 .siderow__logo {
-  padding-left: 6rem;
+  padding-left: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,27 +45,27 @@
 
 .siderow__logo img {
   width: auto;
-  height: 5rem;
+  height: 3rem;
 }
 .darkmore {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 /* ICON SVG ANIMATION */
 .btn {
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   background: transparent;
   color: var(--clr-primary);
-  padding: 1rem 2rem;
+  padding: 0.8rem;
   text-decoration: none;
   text-shadow: 0 0 3px #fff, 0 0 20px var(--clr-primary);
   cursor: pointer;
   margin: 1rem 1rem;
   line-height: 100%;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
   border: none;
 
   &:hover {
@@ -74,14 +74,14 @@
     border: 3px solid var(--clr-primary);
     color: var(--clr-font);
     text-shadow: none;
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 }
 .text-logo {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--clr-primary);
   font-weight: bold;
-  margin-left: 2rem;
+  margin-left: 1rem;
   transition: all 0.5s ease;
   text-transform: uppercase;
 }
