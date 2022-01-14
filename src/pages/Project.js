@@ -12,7 +12,7 @@ const Project = () => {
     <section>
       <div className='project'>
         {data.map((project) => {
-          const { id, img, title, detail, url } = project
+          const { id, title, detail, url } = project
 
           return (
             <Tilt>
