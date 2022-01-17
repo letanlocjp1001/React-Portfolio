@@ -18,7 +18,7 @@ const Project = () => {
   const { t } = useTranslation()
   return (
     <section>
-      <div className='project'>
+      <div className='project' id='project'>
         <div className='project__margin'>
           <Tilt>
             <div className='project__card'>

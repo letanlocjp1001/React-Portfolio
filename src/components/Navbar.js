@@ -41,39 +41,39 @@ function Navbar() {
       <div className='sidebar'>
         <ul className='side-nav'>
           <li className='side-nav__item'>
-            <Link to='/'>
+            <a href='#home'>
               <button className='btn'>
                 <FaIcons.FaHome />
               </button>
-            </Link>
+            </a>
           </li>
           <li className='side-nav__item'>
-            <Link to='/about'>
+            <a href='#about'>
               <button className='btn'>
                 <FaIcons.FaRegAddressBook />
               </button>
-            </Link>
+            </a>
           </li>
           <li className='side-nav__item'>
-            <Link to='/skill'>
+            <a href='#skill'>
               <button className='btn'>
                 <FaIcons.FaCode />
               </button>
-            </Link>
+            </a>
           </li>
           <li className='side-nav__item'>
-            <Link to='/project'>
+            <a href='#project'>
               <button className='btn'>
                 <FaIcons.FaBusinessTime />
               </button>
-            </Link>
+            </a>
           </li>
           <li className='side-nav__item'>
-            <Link to='/contact'>
+            <a href='#contact'>
               <button className='btn'>
                 <FaIcons.FaPhoneSquare />
               </button>
-            </Link>
+            </a>
           </li>
         </ul>
         <ul className='side-nav'>

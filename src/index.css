@@ -131,21 +131,21 @@ p {
 }
 
 section {
+  position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  height: 100vh;
 }
 .heading {
+  position: absolute;
   font-family: azo-sans-web, sans-serif;
   font-weight: 700;
-  position: fixed;
   left: 70%;
-  top: 20%;
+  top: 40%;
   transform: translate(-50%, -50%) rotate(-30deg);
-  font-size: 35rem;
+  font-size: 30rem;
   -webkit-text-stroke: 3px var(--clr-primary);
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
@@ -153,7 +153,7 @@ section {
   opacity: 0.3;
   animation: headinganima 1.5s linear;
   transition: all 0.5s ease;
-  width: 150%;
+  width: 100%;
   height: auto;
 }
 @keyframes headinganima {

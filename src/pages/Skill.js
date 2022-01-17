@@ -9,7 +9,7 @@ const Skill = () => {
   const { t } = useTranslation()
   return (
     <section>
-      <div className='skill'>
+      <div className='skill' id='skill'>
         <div className='skill-left'>
           {data.map((skill) => {
             const { id, name, precents, icon } = skill

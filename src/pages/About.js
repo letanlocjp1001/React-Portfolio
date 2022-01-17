@@ -9,13 +9,13 @@ function About() {
   const { t } = useTranslation()
   return (
     <>
-      <section className='about'>
+      <section className='about' id='about'>
         <div className='about__position'>
           <div className='about__left'>
             <Tilt>
               <div className='about__boxs'>
                 <div className='about__box'>
-                  <img src={AboutImg} alt='' />
+                  <img src={AboutImg} alt='about' />
                 </div>
                 <div className='about__details'>
                   <h2>{t('about.title')}</h2>
@@ -27,121 +27,139 @@ function About() {
           <div className='about__right'>
             <pre>
               <span className='about__icon'>
-                &#123; <br />
+                <span>&#123;</span> <br />
               </span>
-              <span className='about__parent'>"{t('about.author')}" </span>&#58;
-              <span className='about__children'>"{t('about.name')}"</span>&#44;
+              <span className='about__parent'>"{t('about.author')}" </span>
+              <span>&#58;</span>
+              <span className='about__children'>"{t('about.name')}"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent'>"{t('about.birthday')}" </span>
-              &#58;
-              <span className='about__children'>"{t('about.year')}"</span>&#44;
+              <span>&#58;</span>
+              <span className='about__children'>"{t('about.year')}"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent'>"{t('about.country')}" </span>
-              &#58;
+              <span>&#58;</span>
               <span className='about__children'>
                 "{t('about.countryname')}"
               </span>
-              &#44;
+              <span>&#44;</span>
               <br />
-              <span className='about__parent'>"{t('about.school')}" </span>&#58;
+              <span className='about__parent'>"{t('about.school')}" </span>
+              <span>&#58;</span>
               <span className='about__children'>"{t('about.schoolname')}"</span>
-              &#44;
+              <span>&#44;</span>
               <br />
-              <span className='about__parent'>"repository" </span>&#58; &#123;{' '}
-              <br />
-              <span className='about__parent'>"url" </span>&#58;
+              <span className='about__parent'>"repository" </span>
+              <span>&#58;</span> <span>&#123;</span> <br />
+              <span className='about__parent'>"url" </span>
+              <span>&#58;</span>
               <span className='about__children'>
                 "github.com/letanlocjp1001"
               </span>
-              &#44;
+              <span>&#44;</span>
               <br />
               <span className='about__parent'>{t('about.qualify')} </span>
-              &#58;
+              <span>&#58;</span>
               <span className='about__children'>{t('about.language')}</span>
-              &#44;
+              <span>&#44;</span>
               <br />
-              <span className='about__parent'>"engines" </span>&#58; &#91;{' '}
-              <br />
+              <span className='about__parent'>"engines" </span>
+              <span>&#58;</span> <span>&#91;</span> <br />
               <span className='about__children about__children--chil'>
                 "HTML"
               </span>
-              &#44;
+              <span>&#44;</span>
               <br />
               <span className='about__children about__children--chil'>
                 "CSS"
               </span>
-              &#44;
+              <span>&#44;</span>
               <br />
               <span className='about__children about__children--chil'>
                 "JavaScript"
               </span>
-              &#44;
+              <span>&#44;</span>
               <br />
               <span className='about__children about__children--chil'>
                 "Photoshop"
               </span>
-              &#44;
+              <span>&#44;</span>
               <br />
               <span className='about__children about__children--chil'>
                 "Illustrator"
               </span>
-              &#44;
+              <span>&#44;</span>
               <br />
               <span className='about__children about__children--chil'>
                 "Figma"
               </span>
-              &#44;
+              <span>&#44;</span>
               <br />
               <span className='about__children about__children--chil'>
                 "XD"
               </span>
-              &#44;
+              <span>&#44;</span>
               <br />
-              <span className='about__parent'> </span>]&#44; <br />
-              <span className='about__parent'>"dependencies" </span>&#58; &#123;{' '}
+              <span className='about__parent'> </span>
+              <span>&#44;</span>
               <br />
+              <span className='about__parent'>"dependencies" </span>
+              <span>&#58;</span> <span>&#123;</span> <br />
               <span className='about__parent--children'>"ReactJs" </span>&#58;
-              <span className='about__children'>"^5.0.0"</span>&#44;
+              <span className='about__children'>"^5.0.0"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent--children'>"NodeJs" </span>&#58;
-              <span className='about__children'>"^5.0.0"</span>&#44;
+              <span className='about__children'>"^5.0.0"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent--children'>"A-Frame" </span>&#58;
-              <span className='about__children'>"^5.0.0"</span>&#44;
+              <span className='about__children'>"^5.0.0"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent--children'>"SCSS" </span>&#58;
-              <span className='about__children'>"^5.0.0"</span>&#44;
+              <span className='about__children'>"^5.0.0"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent--children'>"Pug" </span>&#58;
-              <span className='about__children'>"^5.0.0"</span>&#44;
+              <span className='about__children'>"^5.0.0"</span>
+              <span>&#44;</span>
               <br />
-              <span className='about__parent'> </span>&#125;&#44; <br />
+              <span className='about__parent'> </span>&#125;<span>&#44;</span>{' '}
+              <br />
               <span className='about__parent'>
-                devDependencies&#58;{' '}
-              </span>&#123; <br />
+                devDependencies <span>&#58;</span>{' '}
+              </span>
+              <span>&#123;</span> <br />
               <span className='about__parent--children'>
                 "{t('about.game')}"{' '}
               </span>
-              &#58;
-              <span className='about__children'>"^5.0.0"</span>&#44;
+              <span>&#58;</span>
+              <span className='about__children'>"^5.0.0"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent--children'>
                 "{t('about.music')}"{' '}
               </span>
-              &#58;
-              <span className='about__children'>"^5.0.0"</span>&#44;
+              <span>&#58;</span>
+              <span className='about__children'>"^5.0.0"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent--children'>
                 "{t('about.coder')} "{' '}
               </span>
-              &#58;
-              <span className='about__children'>"^5.0.0"</span>&#44;
+              <span>&#58;</span>
+              <span className='about__children'>"^5.0.0"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent--children'>
                 "{t('about.anime')} "{' '}
               </span>
-              &#58;
-              <span className='about__children'>"^5.0.0"</span>&#44;
+              <span>&#58;</span>
+              <span className='about__children'>"^5.0.0"</span>
+              <span>&#44;</span>
               <br />
               <span className='about__parent'> </span>&#125; <br />
               <span className='about__icon'>&#125;</span>

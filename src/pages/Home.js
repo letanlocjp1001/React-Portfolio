@@ -14,84 +14,84 @@ function Home() {
   const particlesLoaded = (container) => {}
   return (
     <>
-      <Particles
-        id='tsparticles'
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          fpsLimit: 60,
-          interactivity: {
-            events: {
-              onClick: {
+      <section className='home' id='home'>
+        <Particles
+          id='tsparticles'
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={{
+            fpsLimit: 60,
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: true,
+                  mode: 'push',
+                },
+                onHover: {
+                  enable: true,
+                  mode: 'repulse',
+                },
+                resize: true,
+              },
+              modes: {
+                bubble: {
+                  distance: 400,
+                  duration: 2,
+                  opacity: 0.8,
+                  size: 40,
+                },
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 0.4,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: '#ffd700',
+              },
+              links: {
+                color: '#FFFFFF',
+                distance: 150,
                 enable: true,
-                mode: 'push',
+                opacity: 0.5,
+                width: 1,
               },
-              onHover: {
+              collisions: {
                 enable: true,
-                mode: 'repulse',
               },
-              resize: true,
-            },
-            modes: {
-              bubble: {
-                distance: 400,
-                duration: 2,
-                opacity: 0.8,
-                size: 40,
-              },
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: '#ffd700',
-            },
-            links: {
-              color: '#FFFFFF',
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: 'none',
-              enable: true,
-              outMode: 'bounce',
-              random: true,
-              speed: 3,
-              straight: false,
-            },
-            number: {
-              density: {
+              move: {
+                direction: 'none',
                 enable: true,
-                value_area: 1000,
+                outMode: 'bounce',
+                random: true,
+                speed: 3,
+                straight: false,
               },
-              value: 20,
+              number: {
+                density: {
+                  enable: true,
+                  value_area: 1000,
+                },
+                value: 20,
+              },
+              opacity: {
+                value: 0.4,
+              },
+              shape: {
+                type: 'star',
+              },
+              size: {
+                random: true,
+                value: 5,
+              },
             },
-            opacity: {
-              value: 0.4,
-            },
-            shape: {
-              type: 'star',
-            },
-            size: {
-              random: true,
-              value: 5,
-            },
-          },
-          detectRetina: true,
-        }}
-      />
-      <section className='home'>
+            detectRetina: true,
+          }}
+        />
         <div className='home__left'>
           <svg
             id='svg__name'
