@@ -6,7 +6,7 @@ import '../i18n'
 import { useTranslation } from 'react-i18next'
 
 // import Logo from '../img/logo.png'
-import Logo1 from '../img/icon.svg'
+import Logo1 from '../img/project2.svg'
 
 const getStorageTheme = () => {
   let theme = 'dark__theme'

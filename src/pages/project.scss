@@ -3,11 +3,14 @@
   justify-content: space-around;
   padding: 15rem 22rem;
   flex-wrap: wrap;
+  &__margin {
+    margin-bottom: 2rem;
+  }
 
   &__card {
     width: 35rem;
     height: 100%;
-    margin: 3rem 2.5rem;
+    margin: 3rem 2rem;
     padding: 2rem 3rem;
     box-shadow: 0 4px 5px 3px rgba(242, 0, 178, 0.6);
     color: var(--clr-font);
@@ -41,8 +44,9 @@
     margin: 1rem 0;
   }
   &__details {
-    font-size: 1.6rem;
-    height: 15rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    height: 20rem;
   }
 
   &__language {
@@ -85,4 +89,10 @@
 }
 .scss {
   color: #cc6799;
+}
+.pug {
+  color: #b46639;
+}
+.gulp {
+  color: #e32c26;
 }
