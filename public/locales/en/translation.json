@@ -22,7 +22,11 @@
     "school": "school",
     "schoolname": "ECC Computer College",
     "qualify": "Qualifications",
-    "language": "Japanese Language Proficiency Test"
+    "language": "Japanese Language Proficiency Test",
+    "game": "Game",
+    "music": "Music",
+    "coder": "Coder",
+    "anime": "Anime"
   },
   "contact": {
     "name": "Full Name",

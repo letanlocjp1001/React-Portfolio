@@ -29,18 +29,22 @@ function About() {
               <span className='about__icon'>
                 &#123; <br />
               </span>
-              <span className='about__parent'>{t('about.author')} </span>&#58;
-              <span className='about__children'>{t('about.name')}</span>&#44;
+              <span className='about__parent'>"{t('about.author')}" </span>&#58;
+              <span className='about__children'>"{t('about.name')}"</span>&#44;
               <br />
-              <span className='about__parent'>{t('about.birthday')} </span>&#58;
-              <span className='about__children'>{t('about.year')}</span>&#44;
+              <span className='about__parent'>"{t('about.birthday')}" </span>
+              &#58;
+              <span className='about__children'>"{t('about.year')}"</span>&#44;
               <br />
-              <span className='about__parent'>{t('about.country')} </span>&#58;
-              <span className='about__children'>{t('about.countryname')}</span>
+              <span className='about__parent'>"{t('about.country')}" </span>
+              &#58;
+              <span className='about__children'>
+                "{t('about.countryname')}"
+              </span>
               &#44;
               <br />
-              <span className='about__parent'>{t('about.school')} </span>&#58;
-              <span className='about__children'>{t('about.schoolname')}</span>
+              <span className='about__parent'>"{t('about.school')}" </span>&#58;
+              <span className='about__children'>"{t('about.schoolname')}"</span>
               &#44;
               <br />
               <span className='about__parent'>"repository" </span>&#58; &#123;{' '}
@@ -115,16 +119,28 @@ function About() {
               <span className='about__parent'>
                 devDependencies&#58;{' '}
               </span>&#123; <br />
-              <span className='about__parent--children'>"Game" </span>&#58;
+              <span className='about__parent--children'>
+                "{t('about.game')}"{' '}
+              </span>
+              &#58;
               <span className='about__children'>"^5.0.0"</span>&#44;
               <br />
-              <span className='about__parent--children'>"Music" </span>&#58;
+              <span className='about__parent--children'>
+                "{t('about.music')}"{' '}
+              </span>
+              &#58;
               <span className='about__children'>"^5.0.0"</span>&#44;
               <br />
-              <span className='about__parent--children'>"Coder" </span>&#58;
+              <span className='about__parent--children'>
+                "{t('about.coder')} "{' '}
+              </span>
+              &#58;
               <span className='about__children'>"^5.0.0"</span>&#44;
               <br />
-              <span className='about__parent--children'>"Anime" </span>&#58;
+              <span className='about__parent--children'>
+                "{t('about.anime')} "{' '}
+              </span>
+              &#58;
               <span className='about__children'>"^5.0.0"</span>&#44;
               <br />
               <span className='about__parent'> </span>&#125; <br />

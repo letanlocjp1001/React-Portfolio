@@ -5,18 +5,18 @@
   flex-wrap: wrap;
 
   &__card {
-    width: 40rem;
-    height: 70rem;
-    margin: 2.5rem 2.5rem;
-  }
-  &__card--view {
+    width: 35rem;
+    height: 100%;
+    margin: 3rem 2.5rem;
+    padding: 2rem 3rem;
     box-shadow: 0 4px 5px 3px rgba(242, 0, 178, 0.6);
     color: var(--clr-font);
     background-color: transparent;
     opacity: 1;
     transition: all 0.5s ease;
   }
-  &__card--view:hover {
+
+  &__card:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px rgba(242, 0, 178, 0.8);
@@ -24,6 +24,14 @@
 }
 .card {
   &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+  }
+  &__img img {
+    width: auto;
+    height: 80%;
   }
   &__body {
     text-align: center;
@@ -34,6 +42,15 @@
   }
   &__details {
     font-size: 1.6rem;
+    height: 15rem;
+  }
+
+  &__language {
+    margin-top: 2rem;
+    font-size: 3rem;
+    span {
+      margin-left: 5px;
+    }
   }
 
   &__btn {
@@ -50,6 +67,22 @@
     text-transform: uppercase;
     text-shadow: 0 0 3px #fff, 0 0 20px var(--clr-primary);
     cursor: pointer;
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
+}
+
+.html5 {
+  color: #e34c26;
+}
+.css3 {
+  color: #2b55ff;
+}
+.js {
+  color: #dabf11;
+}
+.react {
+  color: #06a1e9;
+}
+.scss {
+  color: #cc6799;
 }
