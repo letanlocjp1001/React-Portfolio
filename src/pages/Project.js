@@ -1,7 +1,7 @@
 import React from 'react'
 import Tilt from 'react-parallax-tilt'
 import * as FaIcons from 'react-icons/fa'
-import { SiPug, SiNetlify } from 'react-icons/si'
+import { SiPug, SiNetlify, SiRedux, SiExpo } from 'react-icons/si'
 import './project.scss'
 import { useTranslation } from 'react-i18next'
 // import data from '../data/dataproject'
@@ -11,6 +11,7 @@ import Project3 from '../img/logo-img.png'
 import Project4 from '../img/logo-green-2x.png'
 import Project5 from '../img/project5.png'
 import Project6 from '../img/project6.svg'
+import Project7 from '../img/project7.svg'
 import '../i18n'
 
 const Project = () => {
@@ -173,7 +174,7 @@ const Project = () => {
               <div className='card__body'>
                 <div className='card__title'>Trillo</div>
                 <div className='card__details'>
-                  Natoursとはあなたの旅行の目的や行き先に合わせて、宿泊を含めた国内観光のプランを旅色コンシェルジュが
+                  Trilloとはあなたの旅行の目的や行き先に合わせて、宿泊を含めた国内観光のプランを旅色コンシェルジュが
                   無料でご提案いたします。
                   また、ご希望に応じて紹介した旅館・ホテルの予約代行をいたします。おすすめスポットやグルメ情報のみの紹介も可能です。
                 </div>
@@ -212,9 +213,7 @@ const Project = () => {
               <div className='card__body'>
                 <div className='card__title'>Cooktail</div>
                 <div className='card__details'>
-                  Natoursとはあなたの旅行の目的や行き先に合わせて、宿泊を含めた国内観光のプランを旅色コンシェルジュが
-                  無料でご提案いたします。
-                  また、ご希望に応じて紹介した旅館・ホテルの予約代行をいたします。おすすめスポットやグルメ情報のみの紹介も可能です。
+                  CooktailWebはAPIで読み出しました。好きな飲み物を検索出来ています。
                 </div>
                 <div className='card__language'>
                   <span className='react'>
@@ -229,6 +228,44 @@ const Project = () => {
                 </div>
                 <a
                   href='https://letanloccocktail.netlify.app/'
+                  className='card__btn'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  {t('page.project')}
+                </a>
+              </div>
+            </div>
+          </Tilt>
+        </div>
+        <div className='project__margin'>
+          <Tilt>
+            <div className='project__card'>
+              <div className='card__img'>
+                <img src={Project7} alt='Menu' />
+              </div>
+              <div className='card__body'>
+                <div className='card__title'>キッチン 食事</div>
+                <div className='card__details'>
+                  React Native と Redux で
+                  IOS、Androidのアプリを開発しました。アプリの中で食事を選択して食事のやり方を出ています。データも保存できます。
+                </div>
+                <div className='card__language'>
+                  <span className='react'>
+                    <FaIcons.FaReact />
+                  </span>
+                  <span className='expo'>
+                    <SiExpo />
+                  </span>
+                  <span className='redux'>
+                    <SiRedux />
+                  </span>
+                  <span className='netlify'>
+                    <SiNetlify />
+                  </span>
+                </div>
+                <a
+                  href='hhttps://github.com/letanlocjp1001/RNative-Menu'
                   className='card__btn'
                   target='_blank'
                   rel='noreferrer'
