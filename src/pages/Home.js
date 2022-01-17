@@ -35,10 +35,10 @@ function Home() {
               },
               modes: {
                 bubble: {
-                  distance: 400,
+                  distance: 300,
                   duration: 2,
-                  opacity: 0.8,
-                  size: 40,
+                  opacity: 0.7,
+                  size: 30,
                 },
                 push: {
                   quantity: 4,
@@ -76,7 +76,7 @@ function Home() {
                   enable: true,
                   value_area: 1000,
                 },
-                value: 20,
+                value: 15,
               },
               opacity: {
                 value: 0.4,

@@ -133,8 +133,6 @@ p {
 section {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -142,10 +140,10 @@ section {
   position: absolute;
   font-family: azo-sans-web, sans-serif;
   font-weight: 700;
-  left: 70%;
+  left: 60%;
   top: 40%;
   transform: translate(-50%, -50%) rotate(-30deg);
-  font-size: 30rem;
+  font-size: 28rem;
   -webkit-text-stroke: 3px var(--clr-primary);
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
@@ -155,6 +153,7 @@ section {
   transition: all 0.5s ease;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 @keyframes headinganima {
   0% {
