@@ -75,6 +75,7 @@ body {
   font-size: 0.875rem;
   background-color: var(--clr-bg);
   transition: all 0.5s ease;
+  overflow-x: hidden;
 }
 ul {
   list-style-type: none;
