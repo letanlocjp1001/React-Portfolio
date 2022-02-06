@@ -78,19 +78,25 @@ function Navbar() {
         </ul>
         <ul className='side-nav'>
           <li className='side-nav__item'>
-            <button className='btn'>
-              <FaIcons.FaFacebook />
-            </button>
+            <a href='https://www.facebook.com/profile.php?id=100015611534207'>
+              <button className='btn'>
+                <FaIcons.FaFacebook />
+              </button>
+            </a>
           </li>
           <li className='side-nav__item'>
-            <button className='btn'>
-              <FaIcons.FaInstagram />
-            </button>
+            <a href='https://www.instagram.com/?hl=en'>
+              <button className='btn'>
+                <FaIcons.FaInstagram />
+              </button>
+            </a>
           </li>
           <li className='side-nav__item'>
-            <button className='btn'>
-              <FaIcons.FaGithub />
-            </button>
+            <a href='https://github.com/letanlocjp1001'>
+              <button className='btn'>
+                <FaIcons.FaGithub />
+              </button>
+            </a>
           </li>
         </ul>
       </div>
