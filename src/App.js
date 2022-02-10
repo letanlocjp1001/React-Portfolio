@@ -6,10 +6,11 @@ import About from './pages/About'
 import Skill from './pages/Skill'
 import Project from './pages/Project'
 import Contact from './pages/Contact'
+import Spinner from './components/Spinner'
 
 function App() {
   return (
-    <Suspense fallback='loading'>
+    <Suspense fallback={<Spinner></Spinner>}>
       <Router>
         <Navbar />
         <Home />
